@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/64ab2a0281.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-transparent">
+      <!-- <a class="navbar-brand" href="#">Nereus</a> -->
+
+      <div class="icon">
+          <img src="./images/icon.jpeg" width="70%" height="40px" />
+      </div>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto nav-border px-3">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-capitalize  text-white"
+              href="#"
+              >about</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-capitalize  text-white"
+              href="#"
+              >services</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-capitalize  text-white"
+              href="#"
+              >contact</a
+            >
+          </li>
+        </ul>
+        <ul class="list-inline navbar-nav px-3">
+          <li class="py-1 list-inline-item">
+            <a href="" class="text-white text-capitalize"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li class="py-1 list-inline-item">
+            <a href="" class="text-white text-capitalize"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li class="py-1 list-inline-item">
+            <a href="" class="text-white text-capitalize"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Slider -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleCaptions"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./images/thoughtful-young-bearded-manager-typing-on-keyboard-while-3966786.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="text-capitalize h1 display-2 font-weight-bold">
+              walk through magic
+            </h1>
+            <p class="text-capitalize py-5">the digital presence for you</p>
+            <a href="" class="btn-primary btn btn-custom">Who We Are</a>                         
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleCaptions"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleCaptions"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- Vision -->
+    <section class="card text-center py-5">
+      <div class="card-body py-5">
+        <h5 class="card-title">WHO WE ARE</h5>
+        <p
+          class="card-text py-3 mb-3 text-center lead text-muted"
+          style="width: 50%; margin: auto;"
+        >
+          We are an innovative, info-tech outfit dedicated to guiding our
+          clients through a world of amazing possibilities and making these
+          possibilities REALITIES
+        </p>
+        <a href="#" class="btn">Read more</a>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 px-5 py-5 bg-white">
+          <h2 class="px-5 h2 text-capitalize font-weight-bolder">
+            what We do
+          </h2>
+          <p class="px-5 text-muted" style="font-size: 1rem;">
+            We are a full service IT and digital communications agency
+          </p>
+          <div class="container-fluid">
+            <div class="col py-2" style="margin-bottom: 1rem;">
+              <div class="row">
+                <div class="col-md-3 px-5 side-icons">
+                  <i class="fas fa-mobile mb-3" style="font-size: 50px;"></i>
+                </div>
+                <div class="col-md-9">
+                  <h6 class="h6 font-weight-bold">
+                    Mobile Application Development
+                  </h6>
+                  <p class="text-muted" style="width: 100%;">
+                    We specialize in the design, operational mapping, large
+                    scale networking, infusion of social media third party
+                    applications across android, windows and ios operating
+                    platforms.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col py-2" style="margin-bottom: 1rem;">
+              <div class="row">
+                <div class="col-md-3 px-5 side-icons">
+                  <i class="fas fa-mobile mb-3" style="font-size: 50px;"></i>
+                </div>
+                <div class="col-md-9">
+                  <h6 class="h6 font-weight-bold">
+                    Mobile / Digital Marketing
+                  </h6>
+                  <p class="text-muted">
+                    We understand how to maximize and generate traffic for
+                    social media campaigns and develop our apps to link
+                    simultaneously with payment portals and the most appropriate
+                    social media platforms for your campaign.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col py-2" style="margin-bottom: 1rem;">
+              <div class="row">
+                <div class="col-md-3 px-5 side-icons">
+                  <i class="fas fa-mobile mb-3" style="font-size: 50px;"></i>
+                </div>
+                <div class="col-md-9">
+                  <h6 class="h6 font-weight-bold">
+                    State of the art OOH marketing
+                  </h6>
+                  <p class="text-muted">
+                    Utilising FogScreen, 3D displays and a host of
+                    technologically enhancing hardware options, we create unique
+                    highlights for activations, product launches and indoor
+                    advertising for your products and services.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 image-section">
+          <img src="./images/first.jpeg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 image-section">
+          <img src="./images/second.jpeg" alt="" />
+        </div>
+        <div class="col-md-6 px-5 py-5 bg-white">
+          <h2 class="px-5 h2 text-capitalize font-weight-bolder">
+            about us
+          </h2>
+          <p class="px-5 text-muted" style="font-size: 1rem; width: 120%;">
+            We are your partners for growth.
+          </p>
+          <div class="container-fluid">
+            <div
+              class="col mx-3"
+              style="margin-bottom: 1rem; border: 1px solid #ccc;"
+            >
+              <div class="row">
+                <div class="col-sm-2 icon-block text-muted">
+                  +
+                  <!-- <p class="display-3 px-4" style="margin-top: -2rem;">-</p> -->
+                </div>
+                <div
+                  class="col-sm-10 text-info text-capitalize text-block text-muted">
+
+                  capabilities
+                  <!-- <p class="text-info text-capitalize font-weight-bold lead">
+                    capabilities
+                  </p> -->
+                </div>
+              </div>
+            </div>
+            <div
+              class="col mx-3"
+              style="margin-bottom: 1rem; border: 1px solid #ccc;"
+            >
+              <div class="row">
+                <div class="col-sm-2 icon-block text-muted">
+                  +
+                  <!-- <p class="display-3 px-4" style="margin-top: -2rem;">-</p> -->
+                </div>
+                <div
+                  class="col-sm-10 text-info text-capitalize  text-block text-muted"
+                >
+                  mission
+                  <!-- <p class="text-info text-capitalize font-weight-bold lead">
+                    capabilities
+                  </p> -->
+                </div>
+              </div>
+            </div>
+            <div
+              class="col mx-3"
+              style="margin-bottom: 1rem; border: 1px solid #ccc;"
+            >
+              <div class="row">
+                <div class="col-sm-2 icon-block text-muted">
+                  +
+                  <!-- <p class="display-3 px-4" style="margin-top: -2rem;">-</p> -->
+                </div>
+                <div
+                  class="col-sm-10 text-info text-capitalize  text-block text-muted"
+                >
+                  values
+                  <!-- <p class="text-info text-capitalize font-weight-bold lead">
+                    capabilities
+                  </p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="container-fluid">
+      <div class="row bg-dark">
+        <div class="col-lg-3 text-center py-5">
+          <img src="./images/strike.jpeg" alt="" class="mb-1 img-marketing" />
+          <h2 class="text-white">62</h2>
+          <p class="text-capitalize text-white">
+            Satisified Clients
+          </p>
+        </div>
+        <div class="col-lg-3 text-center py-5">
+          <img src="./images/book.jpeg" alt="" class="mb-1 img-marketing" />
+          <h2 class="text-white">41</h2>
+          <p class="text-uppercase text-white">
+            PROJECTS IN 2016 ALONE
+          </p>
+        </div>
+        <div class="col-lg-3 text-center py-5">
+          <img src="./images/atm.jpeg" alt="" class="mb-1 img-marketing" />
+          <h2 class="text-white">97</h2>
+          <p class="text-uppercase text-white">
+            active payment platform link
+          </p>
+        </div>
+        <div class="col-lg-3 text-center py-5">
+          <img src="./images/stack.jpeg" alt="" class="img-marketing mb-1" />
+          <h2 class="text-white">190</h2>
+          <p class="text-capitalize text-white">
+            blog posts
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients -->
+    <section class="container-fluid bg-light py-5">
+      <div class="container">
+        <h5 class="text-uppercase text-center mb-5">Satisfied clients</h5>
+        <div class="row-clone bg-white text-center shad">
+          <div class="col text-center py-5">
+            <img src="./images/henry.jpeg" alt="" class="img-client" />
+            <br />
+            <h5 class="h5 font-weight-bold text-capitalize text-center py-4">
+              okonkwo henry
+            </h5>
+            <p class="text-uppercase text-muted">
+              ceo, trupase
+            </p>
+            <p class="py-5">
+              Looking at my advert on your fog screen was so mind blowing, Your service was really perferct.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer container-fluid bg-light">
+      <div class="container">
+        <div class="row py-5 footer-one">
+          <div class="col-lg-4">
+            <img
+              src="./images/icon.jpeg"
+              alt=""
+              class="c-logo"
+              height="30px"
+              width="100px"
+            />
+            <ul class="list-unstyled py-2">
+              <li>GROUND FLOOR, ROCKWELL SUITES</li>
+              <li>1, GBETO STREET,ONIKE,</li>
+              <li>YABA, LAGOS.</li>
+            </ul>
+            <ul class="list-unstyled py-2">
+              <li>info@nereus.com.ng</li>
+              <li>+234-805-7878-125</li>
+              <li>+234-907-6267-959</li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h6 class="h6 font-weight-bold text-uppercase">the company</h6>
+            <ul class="list-unstyled py-3">
+              <li class="py-1">
+                <a href="" class="text-muted text-capitalize">about</a>
+              </li>
+              <li class="py-1">
+                <a href="" class="text-muted text-capitalize">OOH Branding</a>
+              </li>
+              <li class="py-1">
+                <a href="" class="text-muted text-capitalize"
+                  >information technology</a
+                >
+              </li>
+              <li class="py-1">
+                <a href="" class="text-muted text-capitalize">contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h6 class="h6 font-weight-bold text-uppercase">social</h6>
+            <ul class="list-inline py-3">
+              <li class="py-1 list-inline-item">
+                <a href="" class="text-muted text-capitalize"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="py-1 list-inline-item">
+                <a href="" class="text-muted text-capitalize"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="py-1 list-inline-item">
+                <a href="" class="text-muted text-capitalize"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+            <h6 class="h6 font-weight-bold text-uppercase">legals</h6>
+            <ul class="list-unstyled py-3">
+              <li class="py-1">
+                <a href="" class="text-muted text-capitalize">privacy policy</a>
+              </li>
+              <li class="py-1">
+                <a href="" class="text-muted text-capitalize">terms of use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid py-2 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="" class="text-muted text-capitalize"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="" class="text-muted text-capitalize"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="" class="text-muted text-capitalize"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <p class="text-right font-weight-light">
+              &copy; 2017 Nereus Solution. All rights reserved. Designed By
+              Truparse
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
