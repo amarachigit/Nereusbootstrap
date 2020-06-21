@@ -12,6 +12,11 @@
     />
 
     <link
+      rel="javascript"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    />
+
+    <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap"
       rel="stylesheet"
     />
@@ -20,15 +25,17 @@
       src="https://kit.fontawesome.com/64ab2a0281.js"
       crossorigin="anonymous"
     ></script>
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- Nav -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-transparent">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
       <!-- <a class="navbar-brand" href="#">Nereus</a> -->
 
       <div class="icon">
-          <img src="./images/icon.jpeg" width="70%" height="40px" />
+        <img src="./images/icon.jpeg" width="70%" height="40px" />
       </div>
 
       <button
@@ -44,47 +51,39 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto nav-border px-3">
+        <ul class="navbar-nav ml-auto nav-border px-3 nav-list">
           <li class="nav-item active">
-            <a class="nav-link text-white" href="#"
+            <a class="nav-link current-link-click" href="#"
               >Home <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link text-capitalize  text-white"
-              href="#"
-              >about</a
-            >
+            <a class="nav-change nav-link text-capitalize" href="#">about</a>
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link text-capitalize  text-white"
-              href="#"
+            <a class="nav-link nav-change-services text-capitalize" href="#"
               >services</a
             >
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link text-capitalize  text-white"
-              href="#"
+            <a class="nav-link nav-change-contact text-capitalize" href="#"
               >contact</a
             >
           </li>
         </ul>
         <ul class="list-inline navbar-nav px-3">
           <li class="py-1 list-inline-item">
-            <a href="" class="text-white text-capitalize"
+            <a href="" class="social-fb text-capitalize"
               ><i class="fab fa-facebook-f"></i
             ></a>
           </li>
           <li class="py-1 list-inline-item">
-            <a href="" class="text-white text-capitalize"
+            <a href="" class="social-tw text-capitalize"
               ><i class="fab fa-twitter"></i
             ></a>
           </li>
           <li class="py-1 list-inline-item">
-            <a href="" class="text-white text-capitalize"
+            <a href="" class="social-in text-capitalize"
               ><i class="fab fa-instagram"></i
             ></a>
           </li>
@@ -117,7 +116,7 @@
               walk through magic
             </h1>
             <p class="text-capitalize py-5">the digital presence for you</p>
-            <a href="" class="btn-primary btn btn-custom">Who We Are</a>                         
+            <a href="" class="btn-primary btn btn-custom">Who We Are</a>
           </div>
         </div>
         <div class="carousel-item">
@@ -137,24 +136,17 @@
           </div>
         </div>
       </div>
-      <a
-        class="carousel-control-prev"
-        href="#carouselExampleCaptions"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#carouselExampleCaptions"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+
+      <!-- arrows -->
+      <div class="icon-slider">
+        <a href="">
+          &#8592;
+        </a>
+        <div class="line"></div>
+        <a href="">
+          &#8594;
+        </a>
+      </div>
     </div>
     <!-- Vision -->
     <section class="card text-center py-5">
@@ -267,8 +259,8 @@
                   <!-- <p class="display-3 px-4" style="margin-top: -2rem;">-</p> -->
                 </div>
                 <div
-                  class="col-sm-10 text-info text-capitalize text-block text-muted">
-
+                  class="col-sm-10 text-info text-capitalize text-block text-muted"
+                >
                   capabilities
                   <!-- <p class="text-info text-capitalize font-weight-bold lead">
                     capabilities
@@ -286,7 +278,7 @@
                   <!-- <p class="display-3 px-4" style="margin-top: -2rem;">-</p> -->
                 </div>
                 <div
-                  class="col-sm-10 text-info text-capitalize  text-block text-muted"
+                  class="col-sm-10 text-info text-capitalize text-block text-muted"
                 >
                   mission
                   <!-- <p class="text-info text-capitalize font-weight-bold lead">
@@ -305,7 +297,7 @@
                   <!-- <p class="display-3 px-4" style="margin-top: -2rem;">-</p> -->
                 </div>
                 <div
-                  class="col-sm-10 text-info text-capitalize  text-block text-muted"
+                  class="col-sm-10 text-info text-capitalize text-block text-muted"
                 >
                   values
                   <!-- <p class="text-info text-capitalize font-weight-bold lead">
@@ -368,7 +360,8 @@
               ceo, trupase
             </p>
             <p class="py-5">
-              Looking at my advert on your fog screen was so mind blowing, Your service was really perferct.
+              Looking at my advert on your fog screen was so mind blowing, Your
+              service was really perferct.
             </p>
           </div>
         </div>
@@ -481,5 +474,45 @@
         </div>
       </div>
     </footer>
+
+    <!-- Change color on scroll -->
+    <!-- <script>
+      $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 650);
+      });
+    </script> -->
+
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 900 ||
+          document.documentElement.scrollTop > 900
+        ) {
+          document.querySelector(".navbar-dark").style.backgroundColor =
+            "white";
+          document.querySelector(".nav-change").style.color = "black";
+          document.querySelector(".nav-change-services").style.color = "black";
+          document.querySelector(".nav-change-contact").style.color = "black";
+          document.querySelector(".social-fb").style.color = "black";
+          document.querySelector(".social-tw").style.color = "black";
+          document.querySelector(".social-in").style.color = "black";
+          document.querySelector(".current-link-click").style.color = "black";
+        } else {
+          document.querySelector(".navbar-dark").style.backgroundColor =
+            "transparent";
+          document.querySelector(".nav-change").style.color = "white";
+          document.querySelector(".nav-change-services").style.color = "white";
+          document.querySelector(".nav-change-contact").style.color = "white";
+          document.querySelector(".social-fb").style.color = "white";
+          document.querySelector(".social-tw").style.color = "white";
+          document.querySelector(".social-in").style.color = "white";
+          document.querySelector(".current-link-click").style.color = "black";
+        }
+      }
+    </script>
   </body>
 </html>

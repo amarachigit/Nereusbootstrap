@@ -1,6 +1,68 @@
 body {
   overflow-x: hidden;
 }
+
+
+/*.navbar-dark {*/
+ /* background: transparent;
+
+}*/
+/*.nav-link {
+  color: black;
+}*/
+/*}*/
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-dark.scrolled{
+  /*background: green!important;*/
+  /*color: black;*/
+}
+
+.icon-slider {
+  position: absolute;
+  top: 40%;
+  height: 7rem;
+  width: 3.5rem;
+  border: 1px solid #c6c2c1;
+  border-left: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.icon-slider a {
+  color: #b5b0ad;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.line {
+  background-color: #c6c2c1;
+  height: 1px;
+   border-bottom: 1px solid #c6c2c1; 
+  width: 100%;
+}
+
+.icon-slider a:hover {
+  color: #000;
+  /* z-index: 3; */
+  background-color: #fff;
+}
+.icon-slider a:hover::before {
+  transform: scaleX(1);
+}
+
+
 .img-marketing {
   width: 20%;
   height: 40%;
@@ -37,11 +99,6 @@ body {
   width: 120%;
   height: 100%;
   margin-left: -2em;
-}
-
-.bg-transparent {
-  background: transparent;
-  background-color: #029;
 }
 
 .slide {
@@ -82,6 +139,11 @@ body {
   padding-left: 90px;
 }
 
+.navbar {
+  height: 80px;
+  padding: 0 !important;
+}
+
 .nav-border,
 nav {
   position: relative;
@@ -90,16 +152,18 @@ nav {
 .nav-border::after {
   content: "";
   position: absolute;
-  top: -12%;
+  /*top: -12%;*/
+  top: -60%;
   right: 0;
-  height: 190%;
+  height: 220%;
   width: 1px;
   background-color: #787878;
 }
 nav::after {
   content: "";
   position: absolute;
-  top: 130%;
+  /*top: 100%;*/
+  top: 100%;
   bottom: 0;
   right: 0;
   height: 1px;
@@ -112,10 +176,17 @@ nav::after {
   font-weight: 500;
   font-size: 13px;
   line-height: 20px;
+  /*color: white !important;*/
+
 }
+
+/*.nav-link a{
+  color: white;
+}*/
 
 .side-icons {
   color: rgb(0, 195, 218);
+  /*color: white;*/
 }
 
 .list-inline-item {
@@ -199,10 +270,11 @@ footer::before {
   /*padding-top: 6rem!important;*/
 }
 
-.footer-one{
-  padding-top: 1000px;
-  padding-bottom: 5rem;
-}
+#navbar {
+  /*background-color: white;*/
+} 
+
+
 
 @media (max-width: 400px) {
   .row-clone {
